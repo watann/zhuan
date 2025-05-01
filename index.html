@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>کۆفی شۆپی ژوان</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kurdtype/fonts/webfonts/Rabar_021.css" />
+</head>
+<body>
+
+  <header>
+    
+    <nav class="subnav">
+        <h1>☕ کۆفی شۆپی ژوان</h1>
+      <ul>
+        <li><a href="#cold">🥤 ساردەمەنی</a></li>
+        <li><a href="#ice">🍰 شیرینی</a></li>
+        <li><a href="#hot">🍵 گەرمەکانی</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="menu">
+    <section id="cold">
+      <h2>🥤 ساردەمەنی</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="a.jpg" alt="ئایس کافێ">
+          <div class="menu-info">
+            <h3>ئایس کافێ</h3>
+            <p>2000 دینار</p>
+          </div>
+        </div>
+
+        <div class="menu-card" onclick="showFlavors()">
+          <img src="a3.jpg" alt="شەربەتی پرتەقاڵ">
+          <div class="menu-info">
+            <h3>شەربەتی پرتەقاڵ</h3>
+            <p>1500 دینار</p>
+          </div>
+        </div>
+        <div class="menu-card" onclick="showFlavors()">
+            <img src="aa.jpg" alt="ئاکرێمی ڕەنگاو">
+            <div class="menu-info">
+              <h3>ئایسکرێمی بە تۆپ</h3>
+              <p>1500 دینار</p>
+            </div>
+          </div>
+          <div class="menu-card" onclick="showFlavors()">
+            <img src="a4.jpg" alt="ئیسکرێمی ڕەنگاو">
+            <div class="menu-info">
+              <h3>دۆندرمە</h3>
+              <p>1500 دینار</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="ice">
+      <h2>🍰 شیرینی</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="b1.jpg" alt="ئایس کافێ">
+          <div class="menu-info">
+            <h3>کریپتی سادە</h3>
+            <p>2000 دینار</p>
+          </div>
+        </div>
+
+        <div class="menu-card" onclick="showFlavors()">
+          <img src="b2.jpg" alt="ئایسکرێمی ڕەنگاو">
+          <div class="menu-info">
+            <h3>کرێپی وەسەت </h3>
+            <p>1500 دینار</p>
+          </div>
+        </div>
+        <div class="menu-card" onclick="showFlavors()">
+          <img src="aa.jpg" alt="ئایسکرێمی ڕەنگاو">
+          <div class="menu-info">
+            <h3> شەربەتی پرتەقاڵ</h3>
+            <p>1500 دینار</p>
+          </div>
+        </div>
+          
+      </div>
+    </section>
+
+    <section id="hot">
+      <h2>🍵 گەرمەکان</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="b.jpg" alt="لاتی">
+          <div class="menu-info">
+            <h3>لاتی کلاسیک</h3>
+            <p>2200 دینار</p>
+          </div>
+        </div>
+        <div class="menu-card">
+            <img src="c1.jpg" alt="لاتی">
+            <div class="menu-info">
+              <h3> قاوەی فستق</h3>
+              <p>2200 دینار</p>
+            </div>
+          </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+    &copy;  کۆفی شۆپی ژوان -   عەربەت-سەرشەقامی گشتی سلێمانی/دەربەندیخان <br>
+    بەرامبەر تەنکی ئاوەکە
+  </footer>
+
+  <div class="modal" id="flavorModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>تامەکانی ئایسکرێمی ڕەنگاو:</h3>
+      <ul>
+        <li>🍌 مۆز</li>
+        <li>🍑 قەیسی</li>
+        <li>🥜 فستق</li>
+        <li>🍒 شلک</li>
+        <li>🍮 کەرمێل</li>
+        <li>☕ قاوە</li>
+        <li>🥛 شیر</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

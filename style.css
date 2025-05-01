@@ -1,0 +1,179 @@
+body {
+    font-family: 'Rabar_021', sans-serif;
+    background: #fffdfb;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: 'Rabar_021';
+    src: url('font/Rabar_021.ttf') format('truetype');
+}
+
+header {
+    background: #5a3e36;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.subnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #5a3e36, #7c574d);
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.subnav ul {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.subnav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+main.menu {
+    padding-top: 100px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+
+.menu-card:hover {
+    transform: scale(1.03);
+}
+
+.menu-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 1rem;
+    text-align: center;
+    background: #f8f8f8;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-info h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+.menu-info p {
+    font-size: 1rem;
+    color: #6B4226;
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
+    font-size: 0.9rem;
+}
+
+
+
+.modal-content {
+    background: #fff;
+    margin: 15% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 101;  /* بەرەو سەر ئەو پەیوەندیدارە نیشانەکان */
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* سەنتەرکردن پەنجەرە بە تایبەتی */
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+  
+ 
+}
+
+/* بەرەو شاشەی مۆبایل */
+@media (max-width: 768px) {
+    .menu-card img {
+        height: 100%;
+    }
+    
+    .menu-info h3 {
+        font-size: 1rem;
+    }
+    
+    .menu-info p {
+        font-size: 0.9rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* بەرەو شاشەی کەمتر لە 500px */
+@media (max-width: 500px) {
+    .menu-card {
+        margin-bottom: 1rem;
+    }
+    .menu-info h3 {
+        font-size: 0.9rem;
+    }
+    .menu-info p {
+        font-size: 0.8rem;
+    }
+}
