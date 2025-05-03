@@ -130,7 +130,18 @@ footer {
     z-index: 101;  /* بەرەو سەر ئەو پەیوەندیدارە نیشانەکان */
 }
 
+#flavorModal .modal-content {
+    max-width: 300px;
+    font-size: 14px;
+  }
 
+  .flavor-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* دوو ستوون */
+    gap: 10px 20px; /* بۆ فاصلە نێوان لیستەکان */
+    list-style: none; /* ئەگەر ناتەوێت bullet */
+    padding: 0;
+  }
 
 .modal {
     display: none;
